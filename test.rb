@@ -20,12 +20,14 @@ class School
         roster[grade]
     end
 
-    def sort
-        sorted = {}
-        roster.each do |grade, students|
-          sorted[grade] = students.sort
-        end
-        sorted
-      end
+    def sort(grade)
+        roster[grade].sort
+    end
 
 end
+
+school1 = School.new("School 1")
+school1.add_student("Adam", 9)
+school1.add_student("Belle", 9)
+
+puts school1.sort(9)
