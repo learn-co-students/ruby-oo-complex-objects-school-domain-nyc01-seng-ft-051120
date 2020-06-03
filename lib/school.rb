@@ -8,7 +8,7 @@ class School
   end
 
   def add_student (student_name, grade)
-    roster[grade] ||= []   #sets the key to the array of students names to grade.
+    roster[grade] ||= [] #  #sets the key to the array of students names to grade. ||= "or equals"
     roster[grade] << student_name #The value of each key will be an array of student names.
   end
 
